@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Segunda Vida</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Oxygen|Roboto+Slab|Slabo+27px" rel="stylesheet">
+  </head>
+  <body>
+
+
+      <div class="parallaxcontacto">
+        <header>
+          <a href="index.html"><img class="logo1" src="img/logo.png" alt=""></a>
+          <span class="menu-bar glyphicon glyphicon-menu-hamburger" aria-hidden="true" id="btn-menu"></span>
+
+          <nav class="menu">
+            <ul>
+              <li><a class="menu__link" href="index.html">Inicio</a></li>
+              <li><a class="menu__link" href="descarga.html">Descarga</a></li>
+              <li><a class="menu__link" href="nosotros.html">Nosotros</a></li>
+              <li><a class="menu__link select" href="contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <div class="container">
+          <div class="titucontacto">
+            <span>Comunícate con Nosotros</span>
+            <hr>
+          </div>
+          <div class="areacorreo">
+            <div class="titucajacorreo">
+              <h2>Mandanos un correo</h2>
+              <hr>
+            </div>
+            <form action="enviar.php" method="post">
+              <div class="nombrecorreo">
+                <div class="nombre">
+                  <span>Nombre:</span>
+                  <input type="text" name="nombre" required placeholder="Ingrese su nombre">
+                </div>
+                <div class="correo">
+                  <span>Correo:</span>
+                  <input type="text" name="correo" required placeholder="Ingrese su correo">
+                </div>
+              </div>
+              <br>
+              <div class="telefonoasunto">
+                <div class="telefono">
+                  <span>Telefono:</span>
+                  <input type="text" name="telefono" required placeholder="Ingrese su telefono">
+                </div>
+                <div class="asunto">
+                  <span>Asunto:</span>
+                  <input type="text" name="asunto" required placeholder="Ingrese el asunto del correo">
+                </div>
+              </div>
+              <br>
+              <span>Mensaje: </span>
+              <textarea name="mensaje" required placeholder="Escriba su mensaje"></textarea>
+              <br><br>
+              <input  type="submit" value="Enviar Mensaje" id="btn-enviar">
+            </form>
+          </div>
+          <br>
+        </div>
+
+      </div>
+
+
+      <footer>
+        <div class="container">
+
+          <div class="row titufooter">
+            <span>¡Unete! <br>Forma parte de este proyecto</span>
+            <hr>
+          </div>
+          <div class="row contactoredes">
+            <div class="redes1">
+              <a href="#"><img src="img/icon/facebook.svg" alt=""></a>
+            </div>
+            <div class="redes2">
+              <a href="#">  <img src="img/icon/twitter.svg" alt=""></a>
+            </div>
+            <div class="redes3">
+              <a href="#">  <img src="img/icon/youtube.svg" alt=""></a>
+            </div>
+            <div class="redes4">
+              <a href="descarga.html"><img src="img/icon/app.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="infolegal">
+          Copyright (c) 2017 Segunda Vida All Rights Reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Iconos diseñados por <a href="http://www.flaticon.es/autores/madebyoliver" title="Madebyoliver">Madebyoliver</a> desde <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> con licencia <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+        </div>
+      </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/menu.js"></script>
+  </body>
+</html>

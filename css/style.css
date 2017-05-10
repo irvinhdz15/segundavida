@@ -1,0 +1,755 @@
+body{
+  background-color: #FFF;
+  font-family: 'Droid Sans', sans-serif;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ .logo1{
+  width: 270px;
+  display: inline;
+  margin-top: -25px;
+  margin-left: 10px;
+}
+
+
+header{
+  box-shadow: none;
+  display: block;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#btn-menu {
+  position: absolute;
+  right: 20px;
+  margin-top: 40px;
+  font-size: 30px;
+  cursor: pointer;
+  color:  rgba(97, 193, 12, 1);
+  display: none;
+}
+
+.menu{
+  float: right;
+  margin-top: 50px;
+  margin-right: 20px;
+}
+
+.menu ul {
+list-style: none;
+margin: 0;
+padding: 0;
+font-size: 20px;
+display: flex;
+
+}
+
+.menu__link {
+display: flex;
+color: #FFF; /*color letra*/
+text-decoration: none;
+padding: 15px;
+margin-right: 10px;
+}
+
+.menu ul li a{
+text-decoration: none;
+}
+
+nav ul li a:hover{
+  text-decoration: none;
+}
+
+.menu__link:hover {
+  background-color: rgba(97, 193, 12, 1);
+  color: #FFF;
+  -webkit-transition: background-color 80ms linear;
+  -ms-transition: background-color 80ms linear;
+  transition: background-color 80ms linear;
+}
+
+.select {
+color: white;
+background-color: #61c10c;
+}
+
+.menu__link:hover.select { /*Color background hover select*/
+background-color: rgba(120, 255, 0, 1);
+color: white;
+}
+
+
+.btn-menu{
+    padding-top: 50px;
+}
+
+@media screen and (max-width:1205px) {
+  .menu__link{
+    padding: 15px 10px 15px 15px;
+    margin-right: 5px;
+  }
+  #btn-menu{
+    margin-top: 80px;
+  }
+}
+
+
+
+@media screen and (max-width: 1023px) {
+  .menu ul li{
+    border-bottom: 1px solid white;
+    background-color: rgba(97, 193, 12, 1);
+  }
+
+  .menu{
+    margin-top: 0;
+    float: none;
+    left: -100%;
+    position: fixed;
+    width: 80%;
+  }
+
+
+  .menu ul{
+    display: block;
+    float: none;
+    width: 100%;
+  }
+
+  #btn-menu{
+    display: block;
+    font-size: 35px;
+    padding-top: 8px;
+    margin-top: 23px;
+  }
+
+  .logo1{
+    width: 200px;
+    padding: 5px;
+    }
+}
+
+/*-------------------------------------------------------*/
+
+footer{
+  width: 100%;
+  height: auto;
+  background-color: #043565;
+  text-align: center;
+  padding: 10px;
+}
+
+.titufooter{
+  font-size: 50px;
+  color: white;
+}
+
+.titufooter hr{
+  border: 2px solid rgba(97, 193, 12, 1);
+  border-radius: 10px;
+}
+
+.redes1,.redes2,.redes3,.redes4 img{
+  width: 100%;
+}
+
+.redes1,.redes2,.redes3,.redes4 {
+  width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactoredes{
+  display: flex;
+  width: 100%;
+}
+
+.infolegal{
+  text-align: center;
+  color: white;
+  font-size: 8px;
+}
+
+.infolegal a{
+  text-align: left;
+  color: white;
+}
+
+@media screen and (max-width: 1023px) {
+  .redes1,.redes2,.redes3,.redes4 {
+    width: 50px;
+  }
+  .infolegal{
+    font-size:6px;
+  }
+}
+
+
+/*----------------------------------------------------*/
+
+.parallax {
+    /* The image used */
+    background-image: url('../img/columpio.jpg');
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+.sectitulo{
+  text-align: center;
+  color: #f0f0f0;
+  margin-top: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+}
+
+.encabezado{
+  font-size: 100px;
+}
+
+.texto{
+  font-size: 35px;
+}
+
+@media screen and (max-width: 1023px) {
+
+  .parallax{
+    height: 30%;
+  }
+
+  .sectitulo{
+    text-align: center;
+    color: #f0f0f0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+  }
+
+  .encabezado{
+    font-size: 50px;
+  }
+
+  .texto{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .parallax, .parallax1, .parallaxdescarga {
+        background-attachment: scroll;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+  .impacto p{
+    padding: 10px;
+  }
+}
+
+.impacto{
+  min-height: 260px;
+}
+
+.tarjetas{
+  min-height: 400px;
+}
+
+
+.tarjetas span{
+  font-size: 50px;
+  color: rgb(94, 107, 37);
+}
+
+.impacto span{
+  font-size: 50px;
+  color: rgb(94, 107, 37);
+}
+
+.tarjetas hr{
+  border: 2px solid rgb(228, 126, 21);
+}
+
+.impacto hr{
+  border: 2px solid rgb(228, 126, 21);
+}
+
+/*----------------------------------Parallax1*/
+
+.parallax1 {
+    /* The image used */
+    background-image: url('../img/defensas.jpg');
+      /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: auto;
+}
+
+.info1 {
+    width: 100%;
+    display: flex;
+    padding: 55px;
+    width: 100%;
+    color: #FFF;
+}
+
+
+.info1 p{
+  font-size: 15px;
+}
+
+.textoinfo1 {
+  padding: 15px;
+}
+
+
+/*----------------------------------------------------*/
+  .cuadros{
+    display: flex;
+  }
+
+  .cuadro1, .cuadro2, .cuadro3, .cuadro4 {
+    padding: 20px;
+    margin: 5px;
+    background-color: #0A2239;
+  }
+
+  .cuadro1, .cuadro2, .cuadro3,.cuadro4, span {
+    text-align: center;
+  }
+
+  .cuadrotitu{
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .cuadrotitu span{
+    color: #FFF;
+    font-size: 20px;
+  }
+
+  .cuadro1, .cuadro2, .cuadro3, .cuadro4{
+    width: 25%;
+  }
+
+.cuadro1 > .iconocuadro{
+  color: #FFF;
+}
+
+.cuadro2 > .iconocuadro{
+  color: #FFF;
+}
+.cuadro3 > .iconocuadro{
+  color: #FFF;
+}
+.cuadro4 > .iconocuadro{
+  color: #FFF;
+}
+
+
+  .iconocuadro{
+    font-size: 30px;
+    margin: 10px;
+  }
+
+  .cuadrotitu p{
+    font-size: 12px;
+    font-weight: normal;
+    text-align: justify;
+    color: #FFF;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .cuadro1:hover, .cuadro2:hover, .cuadro3:hover, .cuadro4:hover {
+    -webkit-box-shadow: 0px 0px 27px 6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 27px 6px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 27px 6px rgba(0,0,0,0.75);
+    background-color: #0756a2;
+    color: #FFF;
+    -webkit-transition: background-color 80ms linear;
+    -ms-transition: background-color 80ms linear;
+    transition: background-color 80ms linear;
+  }
+
+  .atrifoto{
+    float: right;
+    font-size: 10px;
+    margin-right: 10px;
+  }
+
+.parallaxdescarga{
+  /* The image used */
+  background-image: url('../img/commingsoon.jpg');
+    /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  min-height: 760px;
+}
+
+
+.proximamente{
+  width: 80%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 40px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #FFF;
+  margin-top: 160px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.prox{
+  font-size: 100px;
+  font-weight: 500;
+  font-style: oblique;
+}
+
+.proxtexto{
+  font-size: 25px;
+}
+
+/*-------------------------nosotros-----------------*/
+
+.parallaxnosotros{
+  /* The image used */
+  background-image: url('../img/reusa.jpg');
+    /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  min-height: 760px;
+  color: white;
+}
+
+.parallaxnosotros hr{
+  border: 2px solid rgba(19, 71, 159, 1);
+}
+
+.descripcionestudiantes{
+  font-size: 25px;
+  text-align: justify;
+}
+
+.intro{
+  padding: 10px;
+  color: white;
+}
+
+.nosotros{
+  font-size: 60px;
+}
+
+.intro p{
+  font-size: 20px;
+}
+
+
+.diego img{
+  width: 20%;
+  height: 20%;
+  margin-left: 10px;
+}
+
+.karla img{
+  width: 20%;
+  height: 20%;
+  margin-left: 10px;
+}
+
+.zuriel img{
+  width: 20%;
+  height: 20%;
+  margin-left: 10px;
+}
+
+.roberto img{
+  width: 20%;
+  height: 20%;
+  margin-left: 10px;
+}
+
+.irvin img{
+  width: 20%;
+  height: 20%;
+  margin-left: 10px;
+}
+
+.info1nosotros p{
+  font-size: 15px;
+}
+
+.textoinfo1nosotros{
+display: flex;
+background-color: rgba(0, 0, 0, 0.3);
+border-radius: 5px;
+padding: 5px;
+text-align: justify;
+}
+
+
+@media screen and (max-width:800px) {
+  .areanosotros{
+    text-align: center;
+  }
+
+  .parallaxnosotros hr{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nosotros{
+    font-size: 50px;
+    padding: 5px;
+  }
+  .descripcionestudiantes{
+    font-size: 16px;
+    padding: 10px;
+  }
+  .info1nosotros p{
+    font-size: 12px;
+  }
+
+  .textoinfo1nosotros{
+  display: block;
+  padding: 5px;
+  margin: 10px;
+  }
+
+  .info1nosotros img{
+    margin-left: 27%;
+    width: 50%;
+  }
+
+
+  .info1nosotros h1{
+    font-size: 25px;
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width:500px) {
+  .nosotros{
+    font-size: 35px;
+    padding: 5px;
+  }
+
+  .descripcionestudiantes{
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .info1nosotros img{
+    width: 70%;
+    height: 100px;
+    margin-left: 16%;
+  }
+}
+
+
+/*-----------------------------------------------------*/
+
+@media screen and (max-width:1000px) {
+  .cuadrotitu{
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .iconocuadro{
+    font-size: 13px;
+    margin: 10px;
+  }
+  .cuadrotitu p{
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .cuadros{
+    display: block;
+  }
+
+  .cuadro1, .cuadro2, .cuadro3, .cuadro4 {
+    width: 95%;
+  }
+  .cuadro1, .cuadro2, .cuadro3,.cuadro4, span {
+    text-align: center;
+  }
+
+  .cuadrotitu{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .cuadrotitu p{
+    font-size: 17px;
+    font-weight: normal;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .cuadro1, .cuadro2, .cuadro3, .cuadro4 {
+    width: 100%;
+  }
+  .cuadrotitu{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .iconocuadro{
+    font-size: 25px;
+    margin: 10px;
+  }
+  .cuadrotitu p{
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  .prox{
+    font-size: 60px;
+  }
+
+  .proxtexto{
+    font-size: 20px;
+  }
+
+  .parallaxdescarga{
+    min-height: 500px;
+  }
+
+  .proximamente{
+    margin-top: 70px;
+  }
+
+
+}
+
+
+/*---------------Contacto-------------------------------*/
+
+.parallaxcontacto{
+  /* The image used */
+  background-image: url('../img/contacto.jpg');
+    /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  min-height: 760px;
+  color: white;
+}
+
+
+.titucontacto{
+  font-size: 50px;
+  text-align: center;
+}
+
+.titucontacto hr{
+  border: 2px solid rgba(172, 21, 21, 0.5);
+  width: 100%;
+}
+
+.titucontacto{
+  margin-top: 15px;
+}
+
+/*-----Correo----*/
+
+.areacorreo{
+  width: 80%;
+  background-color: rgba(47, 205, 14, 0.89);
+  font-family: 'Oxygen', sans-serif;
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 7px;
+  padding: 20px;
+}
+
+.titucajacorreo{
+  text-align: center;
+}
+
+.titucajacorreo hr{
+  width: 60%;
+  border: 2px solid #FFF;
+  border-radius: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+
+.areacorreo h2{
+  font-weight: 400;
+  color: #FFF;
+}
+
+form span{
+  color: #FFF;
+}
+
+
+.areacorreo input,textarea {
+  margin-top: 8px;
+  width: 95%;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.nombrecorreo, .telefonoasunto{
+  display: flex;
+}
+
+.nombre, .correo, .telefono, .asunto {
+  width: 50%;
+}
+
+form textarea{
+  width: 98%;
+  height: 100px;
+}
+
+#btn-enviar{
+  background-color: rgb(13, 52, 93);
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 500;
+  width: 98%;
+  border: 0px;
+  height: 40px;
+}
+
+#btn-enviar:hover{
+  background-color: rgb(27, 155, 237);
+  border: 0px;
+}
+
+.areacorreo input{
+  color: #000;
+}
